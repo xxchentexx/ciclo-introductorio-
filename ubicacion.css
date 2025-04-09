@@ -1,0 +1,24 @@
+.map-container {
+    width: 100%;
+    max-width: 560px; /* límite en pantallas grandes */
+    height: auto;
+    aspect-ratio: 1 / 1; /* mantiene proporción cuadrada */
+    margin: 0 auto; /* centra el mapa */
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#ubicacion{
+color: #ff0000;
+}
+/* Para celulares */
+@media (max-width: 600px) {
+    .map-container {
+        max-width: 82vw; /* más pequeño en celular */
+        aspect-ratio: 1 / 1; /* sigue siendo cuadrado */
+    }
+}

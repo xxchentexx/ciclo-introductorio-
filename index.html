@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclo introductorio</title>
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="objetivo.css">
+    <link rel="stylesheet" href="galeria.css">
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="ubicacion.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+   <!-- MENU ENCABEZADO -->
+   <div class="contenedor-header">
+        <header>
+            <label class="logo">
+                <a href="#" ><img src="img/logo.png" alt=""></a>
+            </label>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#about" onclick="seleccionar()">Proposito</a></li>
+                    <li><a href="#objetivo"onclick="seleccionar()">Ubicación</a></li>
+                    <li><a href="#galeria" onclick="seleccionar()">Galería</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div> 
+        </header>
+    </div>
+     <!-- HOME -->
+    <section id="home" class="home">
+        <main class="contenido-home"> 
+            <div class="home-info">
+                <h1 class="hello">Ciclo introductorio UNICA <span class="name">Oficial</span></h1>
+                
+                <p>Inicio el lunes 14 de Abril</p>  
+            </div>
+            
+            <div class="enlaces">
+                <ul class="wrapper">
+                    <li class="icon github">
+                        <span class="tooltip">¡Inscríbete Aquí!</span>
+                        <a href="https://github.com/chentex20" target="_blank" class="btn">
+                            <i class="fa-solid fa-link"></i>
+                            <span class="inscripcion-texto">¡Inscríbete Aquí!</span>
+                        </a>
+                    </li>
+
+                </ul>
+                    
+            </div>
+        </main>
+    </section>
+
+    <!-- ¿QUIENES SOMOS? -->
+    <section id="about" class="about">
+        <div class="nosotros">
+            <h1>Nuestro <span>propósito</span></h1>
+        </div>
+        <div id="MRUnosotoros" class="MRUnosotoros">
+            <div class="tarjeta-1">
+                <div class="cartilla-img">
+                    <img class="cartilla" src="img/MRU_cartilla - copia.png">
+                </div>
+                <div class="web-text">
+                    <h2>&#127919; Misión</h2>
+                    <p>Brindar a los nuevos ingresantes una experiencia introductoria enriquecedora que facilite su adaptación al entorno universitario, a través de clases impartidas por estudiantes y egresados comprometidos con la educación, promoviendo el compañerismo, el aprendizaje colaborativo y el desarrollo personal y académico desde el primer día.                    </p>
+                </div>
+            </div>
+            
+            <div class="tarjeta-2">
+                <div class="cartilla-img">
+                    <img class="cartilla" src="img/MRU_cartilla.png">
+                </div>
+
+                <div class="web-text">
+                    <h2>&#128301; Visión</h2>
+                    <p>Ser un espacio referente de integración, orientación y formación para los nuevos estudiantes de la UNICA, fomentando una comunidad solidaria, participativa y académicamente preparada, que fortalezca el vínculo entre generaciones universitarias.</p>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OBJETIVO -->
+    <section id="objetivo" class="objetivo">
+        <div class="seccion-title">
+            <h1><span>|</span>Ubicación<span>|</span></h1>
+        </div>
+        <h2><i class="fas fa-map-marker-alt" id="ubicacion"></i> Universidad Nacional San Luis Gonzaga – Facultad de Ingenieria Quimica </h2>
+            <br>
+        <div id="grupo1" class="grupo1">
+            
+            <div class="lista-1-0">
+                <img class="facu" src="img/facu.jpg">
+            </div>
+       
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1336.7585754890295!2d-75.73474182512892!3d-14.083613141220063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110e35acecd26a5%3A0x7d2e303f10076212!2sFacultad%20de%20Ingenier%C3%ADa%20Qu%C3%ADmica%20y%20Petroqu%C3%ADmica!5e0!3m2!1ses!2spe!4v1743912025924!5m2!1ses!2spe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </section>
+    <!--
+    <section id="objetivo" class="objetivo">
+        <div class="seccion-title">
+            <h1><span>|</span>Nuestras <span>propuestas</span><span>|</span></h1>
+        </div>
+        <h2>Para alcanzar nuestro ideal, el Partido MRU plantea las siguientes propuestas:</h2>
+            <br>
+        <div id="grupo1" class="grupo1">
+            
+            <div class="section-1">
+                <a href="#" ><img src="img/logo.png" alt=""></a>
+            </div>
+            
+            <div class="section-2">
+                <ol class="roman-list" start="12">
+                    <li>Construcción de un polideportivo.</li>
+                    <br>
+                    <li>Asamblea universitaria, Consejo Universitario y Consejo de Facultad abiertos.</li>
+                    <br>
+                    <li>Participación de estudiantes en la evaluación de planes curriculares.</li>
+                    <br>
+                    <li>Formación profesional de calidad.</li>
+                    <br>
+                    <li>Evaluación periódica de docentes y trabajadores administrativos.</li>
+                    <br>
+                    <li>Participación de los tres estamentos dentro de la administración de la universidad.</li>
+                    <br>
+                    <li>Mantenimiento de las áreas verdes.</li>
+                    <br>
+                    <li>Implementación de un semáforo en la Panamericana frente a la Universidad Nacional.</li>
+                    <br>
+                    <li>Implementación y mantenimiento de los servicios básicos de higiene.</li>
+                    <br>
+                    <li>Implementación de cursos extracurriculares para público en general.</li>
+                    <br>
+                    <li>Constucción de la Facultad de Arquitectura.</li>           
+                </ol>
+            </div>
+        </div>
+    </section>
+    -->
+    <!-- GALERIA --> 
+    <section id="galeria" class="galeria">
+        <div class="seccion-title">
+            <h1><span>|</span>Galería<span>|</span></h1>
+        </div>
+        <div class="gallery">
+            <div class="image-container">
+                <img src="img/campaña13.jfif" id="img13">
+            </div>
+            <div class="image-container">
+                <img src="img/campaña1.jpg" id="img2">
+            </div>
+            <div class="image-container tall">
+                <img src="img/campaña3.jpg" id="img3">
+            </div>
+            <div class="image-container">
+                <img src="img/campaña4.jpg" id="img4">
+            </div>
+            <div class="image-container">
+                <img src="img/campaña5.jpg" id="img5">
+            </div>
+            <div class="image-container tall">
+                <img src="img/campaña10.jpeg" id="img6">
+            </div>
+            <div class="image-container">
+                <<img src="img/campaña11.png" id="img13">
+            </div>
+            <div class="image-container">
+                <img src="img/campaña8.jpg" id="img8">
+            </div>
+            <div class="image-container">
+                <img src="img/campaña9.jpg" id="img9">
+            </div>
+            <div class="image-container">
+                <img src="img/campaña6.jpg" id="img10">
+            </div>
+            <div class="image-container">
+                <img src="img/campaña7.jpg" id="img7">
+            </div>
+            <div class="image-container">
+                <img src="img/campaña12.jpg" id="img13">
+            </div>
+            <div class="image-container">
+                <img src="img/campaña1.jpg" id="img2">
+            </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="seccion-title">
+            <h1><span>|</span>Contacto<span>|</span></h1>
+        </div>
+        <div class="seccion-cuerpo">
+            <h3>Ubicanos en:</h3><h3>Universidad Nacional San Luis Gonzaga (Ciudad Universitaria)</h3>
+
+        </div>
+        
+        <div class="social-buttons">
+            <a href="https://web.facebook.com/profile.php?id=61575164246675" target="_blank" class="btn facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.tiktok.com/@ciclointroductoriounica?_t=ZM-8vNAS3NsbY7&_r=1" target="_blank" class="btn tiktok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            
+                <a href="https://chat.whatsapp.com/KabllhQypmRHjHfaYQLLYz" target="_blank" class="btn whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+    </section> 
+<script src="script.js"></script>
+</body>
+</html>
